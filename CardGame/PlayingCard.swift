@@ -22,7 +22,6 @@ class PlayingCard : Card
         }
     }
     
-    
     internal var suit : String
     {
         get
@@ -49,13 +48,21 @@ class PlayingCard : Card
         }
     }
     
-    internal init()
+    override init()
     {
+        super.init()
         suit = ""
         color = UIColor()
-        super.init()
         rank = 0
         
+    }
+    
+    init(withRank: Int, ofSuit:String)
+    {
+        super.init()
+        color = UIColor.redColor()
+        suit = ofSuit
+        rank = withRank
     }
     
     func getrank() -> Int
@@ -73,61 +80,45 @@ class PlayingCard : Card
         return color
     }
     
-    override func toString() -> String
+    //The class modifier makes it so the is visible without an instane
+    //You would call it by ClassName.method()
+    //In this case PlayingCard.validRanks()
+    class func validRanks() -> [String]
     {
-        let backStatus : String
-        if  super.isFacing()
-        {
-            backStatus = "is face up"
-        }
-        else
-        {
-            
-        }
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return ["♠️","♥️","♣️","♦️"]
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    override func toString() -> String
+    {
+        let backStatus: String
+        if super.isFacing()
+        {
+            backStatus = " is face up"
+        }
+        else
+        {
+            backStatus = " is face up"
+        }
+        
+        
+        
+        let description = "This playing card ranks is: \(rank) and its suit is: \(suit). And it ahs a color of: \(color) "
+        
+        return description
+        
+        
+    }
     
     
 }
