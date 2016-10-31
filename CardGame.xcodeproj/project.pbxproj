@@ -14,6 +14,8 @@
 		28B4CB501DC276D600673B13 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CB4F1DC276D600673B13 /* Card.swift */; };
 		28B4CB541DC2774700673B13 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CB531DC2774700673B13 /* PlayingCard.swift */; };
 		28B4CB581DC27E3500673B13 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CB571DC27E3500673B13 /* CardGameController.swift */; };
+		28D3CC9F1DC7C5C00006DAF5 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3CC9E1DC7C5C00006DAF5 /* Deck.swift */; };
+		28D3CCA11DC7C5DF0006DAF5 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3CCA01DC7C5DF0006DAF5 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		28B4CB4F1DC276D600673B13 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		28B4CB531DC2774700673B13 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		28B4CB571DC27E3500673B13 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
+		28D3CC9E1DC7C5C00006DAF5 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		28D3CCA01DC7C5DF0006DAF5 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				28B4CB4F1DC276D600673B13 /* Card.swift */,
 				28B4CB531DC2774700673B13 /* PlayingCard.swift */,
+				28D3CC9E1DC7C5C00006DAF5 /* Deck.swift */,
+				28D3CCA01DC7C5DF0006DAF5 /* PlayingCardDeck.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			files = (
 				28B4CB501DC276D600673B13 /* Card.swift in Sources */,
 				28B4CB541DC2774700673B13 /* PlayingCard.swift in Sources */,
+				28D3CC9F1DC7C5C00006DAF5 /* Deck.swift in Sources */,
+				28D3CCA11DC7C5DF0006DAF5 /* PlayingCardDeck.swift in Sources */,
 				28B4CB3D1DC2765400673B13 /* AppDelegate.swift in Sources */,
 				28B4CB581DC27E3500673B13 /* CardGameController.swift in Sources */,
 			);
@@ -318,6 +326,7 @@
 				28B4CB4D1DC2765400673B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
