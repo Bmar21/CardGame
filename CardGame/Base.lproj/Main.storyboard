@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Game Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardGameController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,19 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Hc-ezh">
-                                <rect key="frame" x="278" y="285" width="45" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-zx-1OT">
+                                <rect key="frame" x="234" y="34" width="42" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Hc-ezh">
+                                <rect key="frame" x="283" y="285" width="55" height="30"/>
                                 <state key="normal" title="Words"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="178" y="385" width="45" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCr-Ev-jh4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h81-Hc-ezh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aNr-UI-ozR"/>
+                            <constraint firstItem="o4L-zx-1OT" firstAttribute="width" secondItem="h81-Hc-ezh" secondAttribute="width" id="i48-aY-yzN"/>
+                            <constraint firstItem="o4L-zx-1OT" firstAttribute="leading" secondItem="h81-Hc-ezh" secondAttribute="leading" id="iFh-N2-yjc"/>
+                            <constraint firstItem="h81-Hc-ezh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jIj-jp-CxA"/>
+                            <constraint firstItem="h81-Hc-ezh" firstAttribute="top" secondItem="o4L-zx-1OT" secondAttribute="bottom" constant="214" id="oh4-z8-GYO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="h81-Hc-ezh" id="R5i-dr-vBy"/>
+                        <outlet property="cardClick" destination="h81-Hc-ezh" id="eB4-pQ-17m"/>
+                        <outlet property="cardLabel" destination="o4L-zx-1OT" id="kGa-B0-GKf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="847" y="313"/>
         </scene>
     </scenes>
 </document>
