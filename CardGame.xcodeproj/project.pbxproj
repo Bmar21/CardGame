@@ -43,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2810992D1DD3B3200068A4F2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				28B4CB3C1DC2765400673B13 /* AppDelegate.swift */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		28B4CB301DC2765400673B13 = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +71,7 @@
 		28B4CB3B1DC2765400673B13 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				28B4CB3C1DC2765400673B13 /* AppDelegate.swift */,
+				2810992D1DD3B3200068A4F2 /* resources */,
 				28B4CB521DC2770000673B13 /* View */,
 				28B4CB511DC276DE00673B13 /* Model */,
 				28B4CB591DC27E3B00673B13 /* Contoller */,

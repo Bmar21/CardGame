@@ -33,19 +33,41 @@ class PlayingCard : Card
         super.init()
     }
     
+    func getcolor() -> UIColor
+    {
+        return color
+    }
+    
     func getrank() -> Int
     {
         return rank
     }
     
-    func getsuit() -> String
+    func getSuit() -> String
     {
         return suit
     }
     
-    func getcolor() -> UIColor
+    func getCardData() -> String
     {
-        return color
+        return "\(PlayingCard.validRanks()[rank]) \(suit)"
+    }
+    
+    override func toString() -> String
+    {
+        let backStatus: String
+        if super.isFacing()
+        {
+            backStatus = " is face up"
+        }
+        else
+        {
+            backStatus = " is face up"
+        }
+        
+        let description = "This playing card ranks is: \(rank) and its suit is: \(suit). And it ahs a color of: \(color)  \(backStatus)"
+        
+        return description
     }
     
     //The class modifier makes it so the is visible without an instane
@@ -65,28 +87,5 @@ class PlayingCard : Card
     {
         return ["♠️","♥️","♣️","♦️"]
     }
-    
-    
-    override func toString() -> String
-    {
-        let backStatus: String
-        if super.isFacing()
-        {
-            backStatus = " is face up"
-        }
-        else
-        {
-            backStatus = " is face up"
-        }
-        
-        
-        
-        let description = "This playing card ranks is: \(rank) and its suit is: \(suit). And it ahs a color of: \(color) "
-        
-        return description
-        
-        
-    }
-    
     
 }
