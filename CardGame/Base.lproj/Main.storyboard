@@ -25,14 +25,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Hc-ezh">
                                 <rect key="frame" x="200" y="162" width="200" height="277"/>
-                                <state key="normal" title="Words" backgroundImage="Xcode cardback">
-                                    <color key="titleColor" red="1" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Words" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="101" y="262" width="200" height="277"/>
                                 </variation>
                                 <connections>
-                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCr-Ev-jh4"/>
+                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNw-yO-Eas"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,8 +44,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardButton" destination="h81-Hc-ezh" id="KhQ-eR-1bd"/>
-                        <outlet property="cardClick" destination="h81-Hc-ezh" id="eB4-pQ-17m"/>
+                        <outlet property="cardButton" destination="h81-Hc-ezh" id="PAi-S2-qkw"/>
                         <outlet property="cardLabel" destination="o4L-zx-1OT" id="kGa-B0-GKf"/>
                     </connections>
                 </viewController>
@@ -54,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Xcode cardback" width="200" height="277"/>
+        <image name="cardback" width="200" height="277"/>
     </resources>
 </document>
