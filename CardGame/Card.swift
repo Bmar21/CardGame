@@ -10,25 +10,13 @@ import UIKit
 
 class Card
 {
-    internal var backImage : UIImage
     internal var isFaceUp : Bool
 
     init()
     {
-        backImage = UIImage(named: "cardback")!
         isFaceUp = false
     }
     
-    func setBackImage(backImage : UIImage)
-    {
-        self.backImage = backImage
-    }
-    
-    func getBackImage() -> UIImage
-    {
-        return backImage
-    }
-
     func setFacing(isFaceUp : Bool)
     {
         self.isFaceUp = isFaceUp
@@ -38,7 +26,6 @@ class Card
     {
         return isFaceUp
     }
-    
     
     func toString () -> String
     {
