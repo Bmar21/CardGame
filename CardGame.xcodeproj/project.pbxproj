@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280CEFF41DDB902D0070790C /* StupidGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CEFF31DDB902D0070790C /* StupidGame.swift */; };
 		28B4CB3D1DC2765400673B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CB3C1DC2765400673B13 /* AppDelegate.swift */; };
 		28B4CB421DC2765400673B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B4CB401DC2765400673B13 /* Main.storyboard */; };
 		28B4CB441DC2765400673B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B4CB431DC2765400673B13 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280CEFF31DDB902D0070790C /* StupidGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StupidGame.swift; sourceTree = "<group>"; };
 		28B4CB391DC2765400673B13 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4CB3C1DC2765400673B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28B4CB411DC2765400673B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				28B4CB531DC2774700673B13 /* PlayingCard.swift */,
 				28D3CC9E1DC7C5C00006DAF5 /* Deck.swift */,
 				28D3CCA01DC7C5DF0006DAF5 /* PlayingCardDeck.swift */,
+				280CEFF31DDB902D0070790C /* StupidGame.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				28B4CB541DC2774700673B13 /* PlayingCard.swift in Sources */,
 				28D3CC9F1DC7C5C00006DAF5 /* Deck.swift in Sources */,
 				28D3CCA11DC7C5DF0006DAF5 /* PlayingCardDeck.swift in Sources */,
+				280CEFF41DDB902D0070790C /* StupidGame.swift in Sources */,
 				28B4CB3D1DC2765400673B13 /* AppDelegate.swift in Sources */,
 				28B4CB581DC27E3500673B13 /* CardGameController.swift in Sources */,
 			);
