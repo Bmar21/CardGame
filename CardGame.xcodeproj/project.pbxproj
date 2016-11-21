@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		280CEFF41DDB902D0070790C /* StupidGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CEFF31DDB902D0070790C /* StupidGame.swift */; };
+		288F80471DE38D77006FA221 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F80461DE38D77006FA221 /* CardView.swift */; };
 		28B4CB3D1DC2765400673B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4CB3C1DC2765400673B13 /* AppDelegate.swift */; };
 		28B4CB421DC2765400673B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B4CB401DC2765400673B13 /* Main.storyboard */; };
 		28B4CB441DC2765400673B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B4CB431DC2765400673B13 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		280CEFF31DDB902D0070790C /* StupidGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StupidGame.swift; sourceTree = "<group>"; };
+		288F80461DE38D77006FA221 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = CardView/CardView.swift; sourceTree = "<group>"; };
 		28B4CB391DC2765400673B13 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B4CB3C1DC2765400673B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28B4CB411DC2765400673B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				28B4CB431DC2765400673B13 /* Assets.xcassets */,
 				28B4CB451DC2765400673B13 /* LaunchScreen.storyboard */,
 				28B4CB401DC2765400673B13 /* Main.storyboard */,
+				288F80461DE38D77006FA221 /* CardView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				28D3CCA11DC7C5DF0006DAF5 /* PlayingCardDeck.swift in Sources */,
 				280CEFF41DDB902D0070790C /* StupidGame.swift in Sources */,
 				28B4CB3D1DC2765400673B13 /* AppDelegate.swift in Sources */,
+				288F80471DE38D77006FA221 /* CardView.swift in Sources */,
 				28B4CB581DC27E3500673B13 /* CardGameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
