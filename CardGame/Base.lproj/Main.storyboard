@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-zx-1OT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-zx-1OT">
                                 <rect key="frame" x="279" y="117" width="42" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Hc-ezh">
@@ -41,6 +41,8 @@
                         <constraints>
                             <constraint firstItem="h81-Hc-ezh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6a9-I4-CCB"/>
                             <constraint firstItem="h81-Hc-ezh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jmH-xp-ZSK"/>
+                            <constraint firstItem="o4L-zx-1OT" firstAttribute="width" secondItem="h81-Hc-ezh" secondAttribute="width" id="mIp-xG-RdQ"/>
+                            <constraint firstItem="o4L-zx-1OT" firstAttribute="centerX" secondItem="h81-Hc-ezh" secondAttribute="centerX" id="tZU-eq-Xni"/>
                         </constraints>
                     </view>
                     <connections>
