@@ -29,12 +29,23 @@ class StupidGame
     {
         hand.append((gameDeck.drawCard() as? PlayingCard)!)
         hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
     }
     
     func checkMatch() -> Bool
     {
         let hasMatch :Bool
-        if(hand[0].rank == hand[1].rank)
+        if(hand[0].rank == hand[1].rank) || (hand[0].color == hand[1].color)
+        {
+            hasMatch = true
+        }
+        else
+        {
+            hasMatch = false
+        }
+        return hasMatch
     }
     
     func playGame() -> Void
